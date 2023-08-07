@@ -16,7 +16,6 @@ fun main(){
 
         println("Digite el numero de notificaciones del numero de la posicion ${cont1} que desea ingresar:")
         var cantNot=readln().toInt()
-
             if (cantNot<100 && cantNot>0) {
                 telefonos[1] += arrayOf(cantNot.toString())
                 telefonos[2] += arrayOf("El numero de telefono ${telefonos[0][cont1]} tiene una cantidad de notificaciones de ${telefonos[1][cont1]}")

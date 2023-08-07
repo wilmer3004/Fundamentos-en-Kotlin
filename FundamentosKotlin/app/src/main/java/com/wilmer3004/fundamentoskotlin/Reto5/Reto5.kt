@@ -17,7 +17,6 @@ fun main(){
     var numTelefono:Long= readln().toLong()
     println("Ingrese su contraseña de cuatro digitos: ")
     var password1:Int= readln().toInt()
-
         if (numTelefono == usuario && password == password1) {
             do{
                 println("Su saldo actual disponible es de $${saldo}")
@@ -82,7 +81,7 @@ fun main(){
                             saldo+=canRecarga
                         }
                         else{
-                            println("Usted decidio no hacer la recarga escribio una respuesta incorrecta")
+                            println("Usted decidio no hacer la recarga o escribio una respuesta incorrecta")
                         }
                     }
                     4->{break}
@@ -97,8 +96,5 @@ fun main(){
         }
         intentos-=1
     }
-    println("Saliste del programa o se te acabaron los intentos para iniciar secion")
-
-
-
+    println("Saliste del programa o se te acabaron los intentos para iniciar sesión")
 }

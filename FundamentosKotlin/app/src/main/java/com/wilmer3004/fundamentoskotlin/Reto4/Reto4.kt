@@ -90,7 +90,7 @@ fun main(){
             }
 
             4->{
-                println("Se va a modificar todos los platos del menu")
+                println("Se va a modificar el menu")
                 for(cod in entradas[0].indices){
 
                         println("${cod}. La ${nom1} ${entradas[0][cod]} tiene como descripcion ${entradas[1][cod]} y un precio de $${entradas[2][cod]}")
@@ -132,9 +132,9 @@ fun main(){
             }
 
             5->{
-                    println("Ingrese el tipo de plato que quiere ver: \n1. ${nom1}\n2. ${nom2}\n3. ${nom3} \n4. ${nom4}")
+                    println("Ingrese el tipo de plato que quiere modificar: \n1. ${nom1}\n2. ${nom2}\n3. ${nom3} \n4. ${nom4}")
                         var plato= readln().toInt()
-                    println("Ingrese el codigo del plato que quiere ver")
+                    println("Ingrese el codigo del plato que quiere modificar:")
                         var cod = readln().toInt()
 
                     when(plato){

@@ -41,11 +41,14 @@ fun main(){
 
 
     for (x in album[3].indices){
-        if (album[3][x]>=1000.toString()){
+        if (album[3][x].toInt()>=1000){
             println("La cancion ${album[0][x]} con ${album[3][x]} reproducciones es mas popular")
         }
-        else if (album[3][x]>=1000.toString()) {
+        else if (album[3][x].toInt()<=1000 && album[3][x].toInt()>0) {
             println("La cancion ${album[0][x]} con ${album[3][x]} reproducciones es poco popular")
+        }
+        else{
+
         }
     }
 
